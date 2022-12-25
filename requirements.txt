@@ -1,4 +1,6 @@
 streamlit
-plotly
-seaborn
+numpy
+pandas
 matplotlib
+sklearn
+sklearn.utils
