@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, VotingClassifier
-
+from sklearn.utils import resample
 
 st.sidebar.image("medcare.png")
 st.image("https://encoredocs.com/wp-content/uploads/2019/10/Diabetes-2.jpg")
