@@ -26,6 +26,8 @@ with col3:
 with col4:
      if sex == 1:
         Pregnancies = st.text_input("No. of Pregnancies")
+     else:
+        Pregnancies = 0
 
 col1, col2, col3 = st.columns(3)
 with col1:
