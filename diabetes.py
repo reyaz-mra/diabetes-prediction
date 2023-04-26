@@ -19,12 +19,13 @@ with col1:
     if option == 'Female':
         sex = 1
 with col2:
+    Glucose = st.text_input("Glucose")
+with col3:
+    BloodPressure = st.text_input("Blood Pressure(in mm/Hg)")
+    
+with col4:
      if sex == 1:
         Pregnancies = st.text_input("No. of Pregnancies")
-with col3:
-    Glucose = st.text_input("Glucose")
-with col4:
-    BloodPressure = st.text_input("Blood Pressure(in mm/Hg)")
 
 col1, col2, col3 = st.columns(3)
 with col1:
