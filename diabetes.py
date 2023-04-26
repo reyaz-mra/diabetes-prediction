@@ -8,13 +8,22 @@ from sklearn.utils import resample
 st.sidebar.image("medcare.png")
 st.image("https://encoredocs.com/wp-content/uploads/2019/10/Diabetes-2.jpg")
 
-col1, col2, col3 = st.columns(3)
-
+col1, col2, col3, col4 = st.columns(4)
+sex = 0
 with col1:
-    Pregnancies = st.text_input("No. of Pregnancies")
+    option = st.selectbox(
+        'Gender',
+        ('Male', 'Female'))
+    if option == 'Male':
+        sex = 0
+    if option == 'Female':
+        sex = 1
 with col2:
-    Glucose = st.text_input("Glucose")
+     if sex == 1:
+        Pregnancies = st.text_input("No. of Pregnancies")
 with col3:
+    Glucose = st.text_input("Glucose")
+with col4:
     BloodPressure = st.text_input("Blood Pressure(in mm/Hg)")
 
 col1, col2, col3 = st.columns(3)
